@@ -1,0 +1,42 @@
+:root {
+    --mainColur : #24353f ;
+}
+
+body {
+    background-color: var(--mainColur);
+}
+.login {
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+h1 {
+    color: #17a2b8;
+}
+input.form-control {
+    --bs-body-bg: var(--mainColur);
+}
+.form-control:focus {
+     color: #ced4da  ;
+}
+.form-control::placeholder {
+    color: #ced4da  ;
+}
+.btn-outline-primary {
+    --bs-btn-hover-bg: #17a2b8 ;
+    --bs-btn-hover-border-color: #17a2b8 ; 
+    --bs-btn-border-color:#17a2b8  ;
+    --bs-btn-color:#17a2b8  ;
+}
+p a {
+    text-decoration: none;
+}
+p a:hover {
+    text-decoration: underline;
+}
+.navbar {
+    
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+.info {
+    color: #17a2b8;
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
