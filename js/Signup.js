@@ -3,6 +3,7 @@ var emailInput = document.getElementById("email");
 var passwordInput = document.getElementById("password");
 var btn = document.querySelector(".btn")
 var Inputs = document.querySelectorAll("input")
+var paragraph = document.querySelector(".paragraph")
 var arr = [] ;
 var x = true
 var y = true
@@ -44,12 +45,14 @@ btn.addEventListener("click" , function () {
                 console.log(arr)
                 localStorage.setItem("dataOfuser" , JSON.stringify(arr))
                passwordInput.nextElementSibling.classList.add("d-none")
+               paragraph.classList.remove("d-none")
                claerData()
         }   
 }
     }
     else {
         passwordInput.nextElementSibling.classList.remove("d-none")
+        paragraph.classList.add("d-none")
     }
 })
 
